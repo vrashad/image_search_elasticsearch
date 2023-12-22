@@ -16,7 +16,9 @@ Deployment-in Manage bölməsinə daxil olaraq, onun Elasticsearch Endpoint link
 
 Deployment-in login və şifrəsi, onu aktivləşdirdikdə istifadəçiyə təqdim edilir
 
-Şəkillər haqqında məlumatların saxlanılacağı indeksi **Dev tools** bölməsi vasitəsilə də etmək mümkündür. Əgər indeksi optimizasiya etmək fikriniz varsa o zaman onu **Dev tools** vasitəsilə qabaqcadan hazır etmək lazımdır
+Şəkillər haqqında məlumatların saxlanılacağı indeksi **Dev tools** bölməsi vasitəsilə də etmək mümkündür. 
+
+Əgər indeksi optimizasiya etmək fikriniz varsa o zaman onu **Dev tools** vasitəsilə qabaqcadan hazır etmək lazımdır
 
 
 ### 2- Create the index
