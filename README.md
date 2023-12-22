@@ -32,10 +32,19 @@ Qovluqda olan hər şəkili vektorlaşdırmaq üçün **vector_generate.py** fay
 ```bash
 vector_generate.py
 ```
+Fayl icra edilərkən bəzi məlumatların daxil edilməsi tələb olunacaq
+**Elasticsearch cloud host** : Elasticsearch-dəki Deployment-in Endpoint ünvanı
+**Elasticsearch cloud username** : Elasticsearch-dəki Deployment-in istifadəçi adı
+**Elasticsearch cloud password** : Elasticsearch-dəki Deployment-in istifadəçi şifrəsi
+**Elasticsearch index name** : Şəkillər haqqında məlumatların yüklənəcəyi indeksin adı
+**Full images path** : Kompyüterinizdə şəkillərin saxlandığı qovluğun tam ünvanı
+**Model name** : Vektorlaşmanı həyata keçirəcəyimiz modelin adı. Default olaraq bu **clip-ViT-B-32**
 
+Məlumatları daxil etdikdən sonra, şəkillər növbə ilə vektorlaşdırılaraq, Elasticsearch-dəki qeyd etdiyiniz indeksə daxil ediləcək
 
+İndeksə daxil edilən hər sənəd faylın adından və onun vektorundan ibarət olacaq
 
-### 4 - Launch the search
+### 4 - Şəkillərin axtarılması
 
 After indexing, you can search for images in the frontend.
 
