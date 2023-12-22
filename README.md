@@ -21,41 +21,20 @@ Deployment-in login və şifrəsi, onu aktivləşdirdikdə istifadəçiyə təqd
 Əgər indeksi optimizasiya etmək fikriniz varsa o zaman onu **Dev tools** vasitəsilə qabaqcadan hazır etmək lazımdır
 
 
-### 2- Create the index
+### 2- Şəkillərin hazır edilməsi
 
-Next step is to create the index. The template used is defined in [/scripts/opensearch_template.py](./scripts/opensearch_template.py).
+Axtarışın aparılacağı şəkilləri qabaqcadan hazırlayaraq `images` qovluğunda yerləşdirmək lazımdır
 
-We use Approximate k-NN search because we expect a high number of images (+1M). Run the helper script:
-
-```bash
-docker-compose run --rm  scripts create-opensearch-index
-```
-
-It will create an index named `images`.
-
-### 3 - Optional: Load unsplash dataset
+### 3 - Şəkillərin vektorlaşdırılması
 
 To be searchable, images need to be embedded with CLIP and indexed.
 
-If you want to try it on the [Unsplash Dataset](https://unsplash.com/data), you can compute the features [as done here](https://github.com/haltakov/natural-language-image-search#on-your-machine).
-You can also use the [pre-computed features](https://drive.google.com/drive/folders/1WQmedVCDIQKA2R33dkS1f980YsJXRZ-q?usp=sharing), courtesy of [@haltakov](https://github.com/haltakov).
-
-**In both cases, you need the permission of Unsplash.**
-
-You should have two files:
-
-- A csv file with photos ids, let name it `photo_ids.csv`
-- A npy file with the features, let name it `features.npy`
-
-Move them to the `/data` folder, so the docker container used to run scripts can access them.
-
-Use the helper script to index the images. For example:
 
 ```bash
-docker-compose run --rm  scripts index-unsplash-opensearch --start 0 --end 10000 /data/photo_ids.csv /data/features.npy
+vector_generate.py
 ```
 
-Will index the ids from 0 to 10000.
+
 
 ### 4 - Launch the search
 
