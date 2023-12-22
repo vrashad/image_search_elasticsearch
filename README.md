@@ -4,30 +4,13 @@
 
 ![Demo](demo.png)
 
-Inspired by https://github.com/haltakov/natural-language-image-search.
 
-The goal is to build a web interface to index and search images with natural language.
+## İstifadə qaydası:
 
-The demo use [Unsplash Dataset](https://unsplash.com/data), but you are not limited to it.
+### 1- Elasticsearch
 
-## Guide: OpenSearch
+İlk olaraq [Elasticsearch](https://cloud.elastic.co/) servisində sizin aktiv Hosted deployment-iniz olmalıdır
 
-### 1- Launch the services
-
-Make sure you have the latest version of [docker](https://www.docker.com/) installed. Then run :
-
-```bash
-docker-compose --profile opensearch --profile backend --profile frontend up
-```
-
-It will launch the following services:
-
-- [OpenSearch](http://localhost:9200)
-- [OpenSearch Dashboards](http://localhost:5601)
-- [The search backend](http://localhost:8000)
-- [The search frontend](http://localhost:3000?db=opensearch)
-
-By default, opensearch credentials are `admin:admin`.
 
 ### 2- Create the index
 
