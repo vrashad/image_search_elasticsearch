@@ -2,7 +2,6 @@
 
 [CLIP](https://huggingface.co/sentence-transformers/clip-ViT-B-32) və [Elasticsearch](https://www.elastic.co/elasticsearch) istifadə edərək, təbii dildə şəkil axtarışını həyata keçirən proyekt.
 
-![Demo](demo.png)
 
 
 ## İstifadə qaydası:
@@ -10,7 +9,7 @@
 ### 1- Elasticsearch
 
 İlk olaraq [Elasticsearch](https://cloud.elastic.co/) servisində sizin aktiv Hosted deployment-iniz olmalıdır
-
+<img src="https://i.postimg.cc/PqDY7rgM/1.jpg">
 
 ### 2- Create the index
 
