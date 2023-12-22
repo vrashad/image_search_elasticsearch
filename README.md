@@ -47,12 +47,29 @@ Məlumatları daxil etdikdən sonra, şəkillər növbə ilə vektorlaşdırıla
 
 ### 4 - Şəkillərin axtarılması
 
-After indexing, you can search for images in the frontend.
+Qovluqda olan hər şəkili vektorlaşdırmaq üçün **vector_generate.py** faylını icra etmıək lazımdır
 
-The frontend is a simple Next.js app, that send search queries to the backend.
+Axtarışa başlamaq üçün **search.py** faylını icra etmıək lazımdır
 
-The backend is a python app, that embed search queries with CLIP and send an approximate k-nn request to the OpenSearch service.
+```bash
+search.py
+```
 
-The sources code are in the `app` and `api` folders.
+Fayl icra edilərkən bəzi məlumatların daxil edilməsi tələb olunacaq
 
-## Guide: Elasticsearch (TODO) 🚧
+**Search query** : Axtarılan şəklin mətni təsviri<br>
+**Elasticsearch cloud host** : Elasticsearch-dəki Deployment-in Endpoint ünvanı<br>
+**Elasticsearch cloud username** : Elasticsearch-dəki Deployment-in istifadəçi adı<br>
+**Elasticsearch cloud password** : Elasticsearch-dəki Deployment-in istifadəçi şifrəsi<br>
+**Elasticsearch index name** : Şəkillər haqqında məlumatların yüklənəcəyi indeksin adı<br>
+**Model name** : Vektorlaşmanı həyata keçirəcəyimiz modelin adı. Default olaraq bu **clip-ViT-B-32**
+
+Məlumatları daxil etdikdən sonra, axtarılan şəklin mətni təsvirinə uyğun olan top 5 şəkil haqqında məlumat qaytarılacaq
+
+Məlumatda şəklin ID-si, faylın adı və uyğunluq balı əks olunacaq
+
+Əgər sorğuya uyğun top faylların sayını artırıb və ya azaltmaq istəsəniz, bunu **search.py** faylında k veriləninin dəyərini dəyişərək həyata keçirə bilərsiniz
+
+```bash
+k = 5  # Number of nearest neighbors
+```
