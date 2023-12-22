@@ -8,8 +8,16 @@
 
 ### 1- Elasticsearch
 
-İlk olaraq [Elasticsearch](https://cloud.elastic.co/) servisində sizin aktiv Hosted deployment-iniz olmalıdır
+İlk olaraq [Elasticsearch](https://cloud.elastic.co/) servisində sizin aktiv Hosted deployment olmalıdır
 <img src="https://i.postimg.cc/PqDY7rgM/1.jpg">
+
+Deployment-in Manage bölməsinə daxil olaraq, onun Elasticsearch Endpoint linkini əldə etmək mümkündür
+<img src="https://i.postimg.cc/y6hdbSkd/2.jpg">
+
+Deployment-in login və şifrəsi, onu aktivləşdirdikdə istifadəçiyə təqdim edilir
+
+Şəkillər haqqında məlumatların saxlanılacağı indeksi **Dev tools** bölməsi vasitəsilə də etmək mümkündür. Əgər indeksi optimizasiya etmək fikriniz varsa o zaman onu **Dev tools** vasitəsilə qabaqcadan hazır etmək lazımdır
+
 
 ### 2- Create the index
 
