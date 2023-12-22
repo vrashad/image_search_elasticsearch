@@ -27,8 +27,7 @@ Axtarışın aparılacağı şəkilləri qabaqcadan hazırlayaraq `images` qovlu
 
 ### 3 - Şəkillərin vektorlaşdırılması
 
-To be searchable, images need to be embedded with CLIP and indexed.
-
+Qovluqda olan hər şəkili vektorlaşdırmaq üçün **vector_generate.py** faylını icra edirik
 
 ```bash
 vector_generate.py
