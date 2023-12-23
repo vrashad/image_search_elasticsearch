@@ -27,6 +27,12 @@ Axtarışın aparılacağı şəkilləri qabaqcadan hazırlayaraq `images` qovlu
 
 ### 3 - Şəkillərin vektorlaşdırılması
 
+Yuxarıda göstərilən etapları bitirdikdən sonra, lazım olan paketləri yükləməliyik
+
+```bash
+pip install elasticsearch pillow sentence-transformers
+```
+
 Qovluqda olan hər şəkili vektorlaşdırmaq üçün **vector_generate.py** faylını icra edirik
 
 ```bash
